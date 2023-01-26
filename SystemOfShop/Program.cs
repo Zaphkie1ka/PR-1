@@ -10,7 +10,10 @@ namespace SystemOfShop
     {
         static void Main(string[] args)
         {
-
+            User user = new User();
+            Console.WriteLine("Данные: " + user.Enter());
+            Console.WriteLine("Итог: " + user.GetName().ToString());
+            Console.ReadKey();
         }
     }
 }

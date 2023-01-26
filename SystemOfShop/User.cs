@@ -14,11 +14,11 @@ namespace SystemOfShop
         private string password;
         public void Users(string name, string login, string password)
         {
-            name = "Сергей";
-            login = "Sergey";
-            password = "12345678";
+            name = "";
+            login = "";
+            password = "";
         }
-        public virtual bool Enter(string login, string password)
+        public virtual bool Enter()
         {
             login = Console.ReadLine();
             password = Console.ReadLine();
@@ -29,6 +29,13 @@ namespace SystemOfShop
             }
             else { result = false; }
             return result;
+        }
+        public string GetName()
+        {
+            Console.WriteLine("Ваш логин: "+login);
+            Console.WriteLine("Ваш пароль: " + password);
+
+            return GetName;
         }
     }
 }

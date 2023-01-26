@@ -8,9 +8,9 @@ namespace SystemOfShop
 {
     internal class Admin : User
     {
-        public override bool Enter(string login, string password)
+        public override bool Enter()
         {
-            return base.Enter(login, password);
+            return base.Enter();
         }
     }
 }
